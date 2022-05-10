@@ -1,0 +1,87 @@
+/* TAILLE DE LA POLICE
+-> Une taille absolue
+    - Ne prend pas en considération l'utilisateur.
+    - Elle est en Pixel (px)
+
+-> Une taille relative
+    - Prend en considération l'utilisateur.
+    - 1) on utilise des "words"
+        - xx-small
+        - x-small
+        - small
+        - medium
+        - large
+        - x-large
+        - xx-large
+
+    - 2) on utilise "em"  
+        - 1 en <=> taille normal selon l'élément   
+*/
+/*  STYLE DE A POLICE
+    - Pour ajouter une police personalisé on peut la télécharger comme sur "dafont.com"
+    - Des services propre à cette fonction (google font).
+    
+
+
+
+*/
+
+#logo {}
+
+h1 {
+    font-family: "theblackliste";
+    text-align: center;
+    opacity: 1;
+    /* opacity permet de rendre transparent un element */
+    border-bottom: 1px black solid;
+    box-shadow:  ;
+
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px black solid;
+    border-radius: 10px 30px 10px 30px;
+}
+
+h3 {
+    clear: left;
+}
+
+p {
+    /* text-align: justify; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: f4f4f4;
+
+
+
+}
+
+footer {}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    padding: 0%;
+}
+
+nav {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Polices */
+@font-face {
+    font-family: "theblackliste";
+    src: url('../src/the_blacklist/theblacklist.ttf.ttf') format("truetype");
+}
