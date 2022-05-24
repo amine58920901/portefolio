@@ -1,4 +1,4 @@
-/* TAILLE DE LA POLICE
+/************ TAILLE DE LA POLICE ***********************
 -> Une taille absolue
     - Ne prend pas en considération l'utilisateur.
     - Elle est en Pixel (px)
@@ -17,35 +17,75 @@
     - 2) on utilise "em"  
         - 1 en <=> taille normal selon l'élément   
 */
-/*  STYLE DE A POLICE
+/*  ************** STYLE DE A POLICE **********************
     - Pour ajouter une police personalisé on peut la télécharger comme sur "dafont.com"
     - Des services propre à cette fonction (google font).
+    */
+
+/*   **************LARGEUR ET HAUTEUR****************************
+    - Pour gerer la larguer on utilise width : qui est soit en px soit en %.
+    - Pour la hauteur on utilise height : qui elle aussi est en px ou en %.
+    */
+
+/* *******MARGES***********
+    - Marge interne -> padding
+    - Marge externe -> margin
+    */
+
+
+/*   *************** LES POSITIONNEMENS***********************
+    - Le positionnement absolue (absolute) permet de placer un élément a n'importe quel endroit.
+
+    - Le positionnement fixe permet (fixed) de placer un élément à un endroit fixe tout le temps.
+
+    - Le positionnement relatif (relative) permet de décaler un élément par rappot a sa position de base.
+    */
+
+
+
+#logo {
+    margin-top: 30px;
+    width: 50px;
+}
+
+h1 {
+    font-family: "theblackliste";
+    margin-top: 0;
+    padding-top: 30px;
+
+
+    /* opacity: 1;  */
+    /* opacity permet de rendre transparent un element */
+}
+
+/* h1:hover
+
+  hover permet de controller l'element lorsque la souris pointe deçu
+    {
+    color: red;
+
+} */
+
+/*h1:active
+
+ active permet de controller l'élément lorsque l'on click deçu
+    {
+    color: green;
+} */
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
     
 
 
 
-*/
-
-#logo {}
-
-h1 {
-    font-family: "theblackliste";
-    text-align: center;
-    opacity: 1;
-    /* opacity permet de rendre transparent un element */
-    border-bottom: 1px black solid;
-    box-shadow:  ;
-
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    border: 1px black solid;
-    border-radius: 10px 30px 10px 30px;
 }
 
 h3 {
-    clear: left;
+    font-size: 1.3em;
 }
 
 p {
@@ -54,13 +94,23 @@ p {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: f4f4f4;
+    background-color: #f4f7f6;
+    margin: 0;
+}
 
+header {
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+    padding-bottom: 30px;
 
 
 }
 
-footer {}
+section {
+    text-align: center;
+}
+
 
 a {
     text-decoration: none;
@@ -68,16 +118,58 @@ a {
 
 }
 
+/* a:focus {
+    focus est utilisé pour changé l'element lorsque l'on se pose deçu
+    color: red;
+}
+*/
+
+/*a:visited {
+    visited change l'element qu'on a deja consulté
+    color: blue;
+}
+*/
 ul {
     padding: 0%;
+    display: inline;
+
 }
 
 nav {
     text-align: center;
+    background: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 5px;
+
 }
 
 li {
     list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+li:hover {
+    font-weight: bold;
+
+}
+
+footer {
+    background: #1d1d1d;
+    color: white;
+    text-align: center;
+}
+
+/* ID */
+#contact {
+    border: 1px black solid;
+    border-radius: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    /* La taille de la boite c'est la bordure de la boite */
 }
 
 /* Polices */
